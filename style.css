@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --ff: "Monstserrat", sans-serif;
+  --colorprimary: white;
+  --colorsceondary: #303030;
+  --coloraccent: green;
+  --h1: bold 64px/72px var(var(--ff));
+}
+
+body {
+  background-color: var(--colorsceondary);
+  color: var(--colorprimary);
+  gap: 20px;
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: var(--coloraccent);
+  color: var(--colorprimary);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  height: 30px;
+  width: 40px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.delete {
+  background-color: red;
+  color: var(--colorprimary);
+  border-radius: 10px;
+  /* padding: 1px; */
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  height: 35px;
+  width: 35px;
+  /* margin: 8px; */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  border: solid 2px var(--coloraccent);
+}
+
+.delete:hover {
+  background-color: transparent;
+  border: solid 2px red;
+}
+
+.about {
+  border: solid 2px var(--coloraccent);
+  background-color: transparent;
+}
+
+.about:hover {
+  color: var(--coloraccent);
+  border: solid 2px var(--colorprimary);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--colorsceondary);
+  /* border: solid 3px var(--coloraccent); */
+  border-radius: 10px;
+}
+
+.group {
+  background-color: var(--colorsceondary);
+  border-radius: 10px;
+  margin: 10px;
+  width: 500px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--colorsceondary);
+  border: solid 3px var(--coloraccent);
+  border-radius: 10px;
+  margin: 10px;
+  width: 500px;
+}
+
+.divNew {
+  display: flex;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background-color: var(--colorsceondary);
+  border: solid 3px var(--coloraccent);
+  border-radius: 10px;
+  margin: 10px;
+}
+
+li {
+  color: var(--colorprimary);
+}
